@@ -13,7 +13,21 @@ function App() {
     // setCounter(counter); //sending updated counter value using this function
 
     //We can also increase counter directly inside parameter
-    setCounter(counter + 1);
+    // setCounter(counter + 1);
+
+    //Video:-08:-A react interview question on counter
+    //Interview question:What will be the value. will it increase by 4 times and value be 19?
+    //no value will remain same bcz useState will send value in batches for updating varibale or UI bcz react is using fuber or diffing algorithm to control it in better way.
+    //This is not increamenting every time bcz everytime only we are inreasing counter variable which is same.
+    // setCounter(counter + 1);
+    // setCounter(counter + 1);
+    // setCounter(counter + 1);
+
+    //What if we want to increase it by four:-we will get callback inside setCounter method,prevCounter contain last updated state
+    setCounter((prevCounter) => prevCounter + 1);
+    setCounter((prevCounter) => prevCounter + 1);
+    setCounter((prevCounter) => prevCounter + 1);
+    setCounter((prevCounter) => prevCounter + 1);
   };
   const removeValue = () => {
     setCounter(counter - 1);

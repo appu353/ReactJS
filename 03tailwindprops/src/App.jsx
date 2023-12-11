@@ -6,17 +6,17 @@ import Card from "./components/Card";
 
 function App() {
   const [count, setCount] = useState(0);
-  let myObject= {
+  let myObject = {
     name: "Aparna",
-    age: 12
-  }
-  let myArr = [1,2,3,4]
+    age: 12,
+  };
+  let myArr = [1, 2, 3, 4];
   return (
     <>
       <h1 className="bg-green-400 text-black p-4 rounded-xl">Tailwind test</h1>
       {/* Calling card component, we can call it any time */}
-      <Card username ="Aparna" btnText = "click me"/>
-      <Card username ="appu"/> 
+      <Card username="Aparna" btnText="click me" />
+      <Card username="appu" />
       {/* <Card channel="React" someObj={myObject}/>
       <Card anotherObj={myArr}/>  */}
       {
