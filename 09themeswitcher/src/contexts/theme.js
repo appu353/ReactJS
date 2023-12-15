@@ -12,3 +12,5 @@ export const ThemeProvider = ThemeContext.Provider; //exporting variable
 export default function useTheme() {
   return useContext(ThemeContext);
 }
+
+//remember to add darkMode: "class", tailwind.config.js
