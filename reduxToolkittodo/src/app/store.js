@@ -23,3 +23,4 @@ export const store = configureStore({
 //NOW we have to go to component and we have to either send data(useDispatch) or fecth data(useSelector).
 //for sending data (useDispatch) we have to import reducer and send that reducer using dispatch.
 //for fetching value we can get access of state inside callback of useSelector method.We can pick whatever we want from state.
+//After that we have to use normal JS for taking value. for removing value we have to send ID we have use dispatch.
