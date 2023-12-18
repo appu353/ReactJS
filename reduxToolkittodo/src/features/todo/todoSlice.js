@@ -23,6 +23,12 @@ export const todoSlice = createSlice({
   },
 });
 
+//Exporting individual functinality of reducers, which we will use in components
+export const { addTodo, removeTodo } = todoSlice.actions;
+
+//store.js will update value of only registered reducers bcz it is restricted store.so we have to export it.
+export default todoSlice.reducer;
+
 //We have to declare property and function in declartions.
 //In context API we are just decalaring function not providing definition
 //We have to provide definition of function here which takes two parameter, state and action.
